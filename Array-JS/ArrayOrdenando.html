@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando</title>
+</head>
+<body>
+    
+<script>
+    let pessoas = ['Bruno','Carlos','Letícia','Alexandre','Demétrios','Jonh']
+
+    console.log(pessoas.sort())//para organizar em ordem alfabética
+
+    let listaNumeros = [12,9,40,3,7,19,1,15]
+ console.log(listaNumeros.sort(ordenandoNumeros))// com números ele só vai organizar de acordo com o primeiroo digito do n° de 2 digitos
+
+ function ordenandoNumeros(a, b){
+    return b - a// para colocar em ordem crencento fazendo a comparação onde se um número for maior que o outro vai pra trás,para inverter o msentido é só inverter o lugar das letras
+ }
+</script>
+
+</body>
+</html>

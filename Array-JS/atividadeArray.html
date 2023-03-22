@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Atividade</title>
+</head>
+
+<body>
+    <h1>Objetos</h1>
+
+    <input id="obj" type="text" placeholder="digite o objeto">
+    <button id="ad">Adicionar</button>
+    <button id="ord">Ordenar</button>
+
+
+    <script>
+        // alert('Digite só com a primeira letra maiúscula')
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+        const btnAdc = document.getElementById('ad')
+
+        btnAdc.addEventListener('click', () => {
+            let nome = document.getElementById('obj')
+            let objs = nome.value
+
+            if (objs === "") {
+                alert('Informe um valor válido')
+            } else{
+                if (objetos.indexOf(objs) === -1) {
+
+                    console.log('Vou fazer o favor de adicionar para você,já que ele não está')
+                    objetos.unshift(objs)
+
+                    console.log(objetos)
+                } else if (objs !== -1)
+                    alert('Objeto já foi adcionado')
+
+            }
+
+            const btnOrd = document.getElementById('ord')
+
+            btnOrd.addEventListener('click', () => {
+                console.log(objetos.sort())
+            })
+
+
+        })
+     
+    
+     
+
+
+    </script>
+</body>
+
+</html>

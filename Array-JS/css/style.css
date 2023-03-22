@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: cornflowerblue;
+}
+h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+    text-align: center;
+    color: darkslateblue;
+}
+input{
+
+  display: block;
+  margin:0 auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 14px;
+  background-color: lightblue;
+  text-align: center;
+  border: none;
+}
+button{
+  
+    font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+
+  background-color: aliceblue;
+  color: darkblue;
+padding: 10px;
+  border:none;
+  border-radius: 8px;
+}
+    
